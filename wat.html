@@ -1,0 +1,65 @@
+flexbox.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .out{
+            width: 100%;
+            height: 550px;
+            /* background-image: linear-gradient(45deg,red,yellow,orange,blue); */
+            background-image: url("https://media.istockphoto.com/id/1180542165/photo/colorful-background-of-pastel-powder-explosion-rainbow-color-dust-splash-on-black-background.jpg?s=612x612&w=0&k=20&c=64yQAMVpqAJ-EUpLUIYotDg8UTpzCz1dxKLY4rSESpE=");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .flexbox{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            align-content: space-evenly;
+        }
+        .left,.right{
+            width: 40%;
+        }
+        .imgbox{
+            width: 430px;
+            height: 430px;
+            /* background-color: aqua; */
+        }
+        .imgbox img{
+            width: 200px;
+            height: 200px;
+        }
+        
+        .content{
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="out flexbox">
+        <div class="left">
+            <div class="imgbox flexbox">
+                <img src="https://media.istockphoto.com/id/1194478289/photo/two-zebras-drinking-from-a-pool-in-the-night.jpg?s=612x612&w=0&k=20&c=Io-2KpsxCCySH0WmTBFoOi34TU8UXhMkoHeU8-pTglg=" alt="">
+                <img src="https://media.istockphoto.com/id/1194478289/photo/two-zebras-drinking-from-a-pool-in-the-night.jpg?s=612x612&w=0&k=20&c=Io-2KpsxCCySH0WmTBFoOi34TU8UXhMkoHeU8-pTglg=" alt="">
+                <img src="https://media.istockphoto.com/id/1194478289/photo/two-zebras-drinking-from-a-pool-in-the-night.jpg?s=612x612&w=0&k=20&c=Io-2KpsxCCySH0WmTBFoOi34TU8UXhMkoHeU8-pTglg=" alt="">
+                <img src="https://media.istockphoto.com/id/1194478289/photo/two-zebras-drinking-from-a-pool-in-the-night.jpg?s=612x612&w=0&k=20&c=Io-2KpsxCCySH0WmTBFoOi34TU8UXhMkoHeU8-pTglg=" alt="">
+            </div>
+        </div>
+        <div class="right">
+            <div class="content">
+                <h1>Welcome</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere eaque ipsa impedit. Quaerat commodi ad officia amet voluptatum consectetur, hic quam aperiam dolorum minima earum, natus dolore aut eius dignissimos.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere eaque ipsa impedit. Quaerat commodi ad officia amet voluptatum consectetur, hic quam aperiam dolorum minima earum, natus dolore aut eius dignissimos.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere eaque ipsa impedit. Quaerat commodi ad officia amet voluptatum consectetur, hic quam aperiam dolorum minima earum, natus dolore aut eius dignissimos.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere eaque ipsa impedit. Quaerat commodi ad officia amet voluptatum consectetur, hic quam aperiam dolorum minima earum, natus dolore aut eius dignissimos.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
