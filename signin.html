@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body{
+            margin: 0%;
+            padding: 0%;
+        }
+        .flexbox{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-content: space-around;
+        }
+        .out{
+            height: 100vh;
+        }
+        .cen{
+            box-shadow: 0px 4px 7px black;
+            border-radius: 12px;
+            background-color: blueviolet;
+
+        }
+        .signfrm{
+            flex-direction: column;
+            padding: 20px;
+            align-items: center;
+        }
+        .signfrm input{
+            margin: 20px;
+            font-size: 22px;
+            text-align: center;
+            border-radius: 12px;
+            padding: 8px 5px;
+            background-color: chartreuse;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="out flexbox">
+        <div class="in">
+            <div class="cen flexbox">
+                <form class="signfrm flexbox" action="">
+                    
+                    <input type="text" placeholder="Enter Username:">
+                    <input type="text" placeholder="Enter Password">
+                    <input type="Submit" value="Sign-in"> 
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
